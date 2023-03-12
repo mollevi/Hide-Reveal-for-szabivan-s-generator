@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Hide/Reveal for szabivan's generator
 // @namespace    http://tampermonkey.net/
-// @version      v4.0.1b
+// @version      v4.0.2b
 // @description  On loading the exorcises, the rows given for self-check are hidden by default, press on the button "Hide/reveal" to toggle them display attributes.
 // @author       Molnár Levente
 
@@ -68,6 +68,8 @@ onclick=\"[document.querySelector('#latex'),\
   document.querySelector('#closed'),\
   document.querySelector('#proof'),\
   document.querySelector('#latex-2'),\
+  document.querySelector('#ground'),\
+  document.querySelector('#unified'),\
   document.querySelector('#answers')].forEach(function(value,index,array){\
 if(value!=null){\
  if(document.querySelector('#all-btn').getAttribute('clicked')=='true'){\
