@@ -5,9 +5,9 @@
 // @description  On loading the exorcises, the rows given for self-check are hidden by default, press on the button "Hide/reveal" to toggle them display attributes.
 // @author       Molnár Levente
 
-// @include      /^http(?:s)?:\/\/www\.inf\.u-szeged\.hu\/~szabivan\/download\/logika\/skolem\/(?:index\.html)?$/gm
-// @include      /^http(?:s)?:\/\/www\.inf\.u-szeged\.hu\/~szabivan\/download\/logika\/cnf\/(?:index\.html)?$/gm
-// @include      /^http(?:s)?:\/\/www\.inf\.u-szeged\.hu\/~szabivan\/download\/logika\/hilbert\/(?:index\.html)?$/gm
+// @include      /^http(?:s)?:\/\/www\.inf\.u-szeged\.hu\/~szabivan\/download\/logika\/skolem\/(?:index\.html)?$/
+// @include      /^http(?:s)?:\/\/www\.inf\.u-szeged\.hu\/~szabivan\/download\/logika\/cnf\/(?:index\.html)?$/
+// @include      /^http(?:s)?:\/\/www\.inf\.u-szeged\.hu\/~szabivan\/download\/logika\/hilbert\/(?:index\.html)?$/
 
 // @icon         data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
 // @grant        none
