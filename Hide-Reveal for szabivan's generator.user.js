@@ -1,14 +1,17 @@
 // ==UserScript==
 // @name         Hide/Reveal for szabivan's generator
 // @namespace    http://tampermonkey.net/
-// @version      v3.2
+// @version      v4.0b
 // @description  On loading the exorcises, the rows given for self-check are hidden by default, press on the button "Hide/reveal" to toggle them display attributes.
 // @author       Molnár Levente
 
 // @include      /^http(?:s)?:\/\/www\.inf\.u-szeged\.hu\/~szabivan\/download\/logika\/skolem\/(?:index\.html)?$/
 // @include      /^http(?:s)?:\/\/www\.inf\.u-szeged\.hu\/~szabivan\/download\/logika\/cnf\/(?:index\.html)?$/
 // @include      /^http(?:s)?:\/\/www\.inf\.u-szeged\.hu\/~szabivan\/download\/logika\/hilbert\/(?:index\.html)?$/
-
+// @include      /^http(?:s)?:\/\/www\.inf\.u-szeged\.hu\/~szabivan\/download\/logika\/groundtermgen\.html$/
+https://www.inf.u-szeged.hu/~szabivan/download/logika/groundtermgen.html
+// @include      /^http(?:s)?:\/\/www\.inf\.u-szeged\.hu\/~szabivan\/download\/logika\/groundgen\/(?:index\.html)?$/
+https://www.inf.u-szeged.hu/~szabivan/download/logika/groundgen/index.html
 // @icon         data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
 // @grant        none
 // ==/UserScript==
