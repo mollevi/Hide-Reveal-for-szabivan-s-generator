@@ -32,13 +32,49 @@
                     document.querySelector("#proof"),
                     document.querySelector("#latex-2"),
                     document.querySelector("#answers")];
-    selectors.forEach(hideTheseSelectors);
+
     function hideTheseSelectors(value, index, array){
         if(value!=null){
             value.style.display = "none";
+        }
+    }
+
+    function addBtnForEach(value, index, array){
+        if(value!=null){
             value.insertAdjacentHTML('afterend', "<button \
 style='display: inline-block; background-color: #bbbbbb' \
 onclick='this.previousSibling.style.display = this.previousSibling.style.display ==\"inline-block\" ? \"none\" : \"inline-block\" ;'>Hide/Reveal</button>");
         }
     }
+
+    document.querySelector("body").insertAdjacentHTML('beforeend', "<button id=all-btn \
+clicked='false'\
+style='display: block; background-color: #bbbbbb' \
+onclick=\"[document.querySelector('#latex'),\
+  document.querySelector('#nyilak'),\
+  document.querySelector('#nnf'),\
+  document.querySelector('#cnf'),\
+  document.querySelector('#latex2'),\
+  document.querySelector('#rescnf'),\
+  document.querySelector('#reslist'),\
+  document.querySelector('#arrowfree'),\
+  document.querySelector('#renamed'),\
+  document.querySelector('#prenex'),\
+  document.querySelector('#skolem'),\
+  document.querySelector('#closed'),\
+  document.querySelector('#proof'),\
+  document.querySelector('#latex-2'),\
+  document.querySelector('#answers')].forEach(function(value,index,array){\
+if(value!=null){\
+ if(document.querySelector('#all-btn').getAttribute('clicked')=='true'){\
+  value.style.display = 'none';\
+ }else{\
+  value.style.display = 'inline-block';\
+}}\
+  });\
+document.querySelector('#all-btn').setAttribute('clicked', document.querySelector('#all-btn').getAttribute('clicked')=='true'? 'false' : 'true');\"\
+'>TOGGLE ALL</button>");
+
+    selectors.forEach(hideTheseSelectors);
+    selectors.forEach(addBtnForEach)
 })();
