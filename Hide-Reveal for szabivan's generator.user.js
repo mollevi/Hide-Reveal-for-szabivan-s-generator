@@ -34,6 +34,8 @@ https://www.inf.u-szeged.hu/~szabivan/download/logika/groundgen/index.html
                     document.querySelector("#closed"),
                     document.querySelector("#proof"),
                     document.querySelector("#latex-2"),
+                    document.querySelector("#ground"),
+                    document.querySelector("#unified"),
                     document.querySelector("#answers")];
 
     function hideTheseSelectors(value, index, array){
