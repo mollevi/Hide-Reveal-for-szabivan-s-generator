@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         Hide/Reveal for szabivan's generator
 // @namespace    http://tampermonkey.net/
-// @version      v4.1
-// @description  On loading the exorcises, the rows given for self-check are hidden by default, press on the button "Hide/reveal" to toggle them display attributes.
+// @version      v4.2
+// @description  This extension hides the solutions on szabivan's generator pages
 // @author       Molnár Levente
 // @updateURL    https://github.com/mollevi/Hide-Reveal-for-szabivan-s-generator/raw/main/Hide-Reveal%20for%20szabivan's%20generator.user.js
 // @downloadURL  https://github.com/mollevi/Hide-Reveal-for-szabivan-s-generator/raw/main/Hide-Reveal%20for%20szabivan's%20generator.user.js
