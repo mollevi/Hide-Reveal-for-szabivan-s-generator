@@ -85,4 +85,17 @@ document.querySelector('#all-btn').setAttribute('clicked', document.querySelecto
 
     selectors.forEach(hideTheseSelectors);
     selectors.forEach(addBtnForEach)
+    [document.querySelector("#click-me-button-2"),
+    document.querySelector("#click-me-button"),
+    document.querySelector("#click-me-too-button"),
+    document.querySelector("#generateButton")].forEach( function(value, index, array){
+        if(value != null){
+            value.addEventListener('click', function() {
+                document.querySelector("#all-btn").click();
+                if(document.querySelector("#all-btn").getAttribute('clicked') == 'true'){
+                    document.querySelector("#all-btn").click();
+                }
+            }
+        }
+});
 })();
