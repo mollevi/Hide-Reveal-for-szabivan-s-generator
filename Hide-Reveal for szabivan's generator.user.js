@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Hide/Reveal for szabivan's generator
 // @namespace    http://tampermonkey.net/
-// @version      v4.2
+// @version      v4.3
 // @description  This extension hides the solutions on szabivan's generator pages
 // @author       Molnár Levente
 // @updateURL    https://github.com/mollevi/Hide-Reveal-for-szabivan-s-generator/raw/main/Hide-Reveal%20for%20szabivan's%20generator.user.js
@@ -90,6 +90,7 @@ document.querySelector('#all-btn').setAttribute('clicked', document.querySelecto
     document.querySelector("#click-me-too-button"),
     document.querySelector("#generateButton")].forEach( function(value, index, array){
         if(value != null){
+            value.click()
             value.addEventListener('click', function() {
                 document.querySelector("#all-btn").click();
                 if(document.querySelector("#all-btn").getAttribute('clicked') == 'true'){
