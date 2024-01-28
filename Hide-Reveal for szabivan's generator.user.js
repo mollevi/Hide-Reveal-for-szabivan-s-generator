@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Hide/Reveal for szabivan's generator
 // @namespace    http://tampermonkey.net/
-// @version      v4.3
+// @version      v4.4
 // @description  This extension hides the solutions on szabivan's generator pages
 // @author       Molnár Levente
 // @updateURL    https://github.com/mollevi/Hide-Reveal-for-szabivan-s-generator/raw/main/Hide-Reveal%20for%20szabivan's%20generator.user.js
