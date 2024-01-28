@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "author": {
+    "email": "mollevi99@gmail.com"
+  },
+  "name": "Hide/Reveal for szabivan's generator",
+  "description": "This extension hides the solutions on szabivan's generator pages",
+  "icons":{
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "version": "4.4.1",
+  "content_scripts": [
+      {
+        "matches": ["*://www.inf.u-szeged.hu/*"],
+        "js": ["content.js"],
+        "world": "ISOLATED"
+      }
+    ]
+  }
