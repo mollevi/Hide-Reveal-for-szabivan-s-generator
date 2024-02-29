@@ -13,7 +13,9 @@
   "version": "4.4.1",
   "content_scripts": [
       {
-        "matches": ["*://www.inf.u-szeged.hu/*"],
+        "matches": ["*://www.inf.u-szeged.hu/*",
+        "*://inf.u-szeged.hu/*"
+        ],
         "js": ["content.js"],
         "world": "ISOLATED"
       }
